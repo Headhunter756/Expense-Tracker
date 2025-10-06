@@ -84,6 +84,11 @@
 				<configuration>
 					<source>17</source>
 					<target>17</target>
+					<archive>
+						<manifest>
+							<mainClass>in.th.main.ExpenseTrackerApplication</mainClass>
+						</manifest>
+					</archive>
 				</configuration>
 			</plugin>
 		</plugins>
