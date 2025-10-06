@@ -1,0 +1,110 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, table, td, th, input, select {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body styling */
+body {
+    background-color: #f0f4f8;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* Form container */
+form#add {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead th {
+    font-size: 1.5rem;
+    padding: 10px 0;
+    text-align: center;
+    color: #333;
+    border-bottom: 2px solid #ddd;
+}
+
+tbody td {
+    padding: 12px 8px;
+    vertical-align: middle;
+    color: #444;
+}
+
+/* Input and select styling */
+input[type="text"],
+input[type="number"],
+input[type="datetime-local"],
+select {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    background-color: #fdfdfd;
+    transition: border-color 0.3s ease;
+}
+
+input:focus,
+select:focus {
+    border-color: #0078d7;
+    outline: none;
+}
+
+/* Button styling */
+input[type="button"],
+input[type="reset"] {
+    padding: 10px 16px;
+    margin-right: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="button"] {
+    background-color: #0078d7;
+    color: white;
+}
+
+input[type="button"]:hover {
+    background-color: #005fa3;
+}
+
+input[type="reset"] {
+    background-color: #e0e0e0;
+    color: #333;
+}
+
+input[type="reset"]:hover {
+    background-color: #c2c2c2;
+}
+
+/* Footer link */
+tfoot a {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #0078d7;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+tfoot a:hover {
+    color: #005fa3;
+}

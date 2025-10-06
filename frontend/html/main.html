@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Expenses</title>
+        <script src="/js/main.js"></script>
+        <link rel="stylesheet" href="/css/main.css">
+    </head>
+    <body>
+        <header>
+            <button onclick="openProfile()"><h4 id="user"></h4></button>
+        </header>
+        <nav>
+            <button onclick="openadd()">Add</button>
+            <button onclick="logout()">Logout</button>
+        </nav>
+        <div>
+            <p id="message"></p>
+        </div>
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Category</th>
+                        <th>Name</th>
+                        <th>Amount</th>
+                        <th>Date</th>
+                        <th>Type</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="content"></tbody>
+            </table>
+        </div>
+    </body>
+</html>
