@@ -78,4 +78,12 @@ public class Config {
 	    source.registerCorsConfiguration("/**", configuration);
 	    return source;
 	}
+	@Override
+	protected void configure(HttpSecurity http) throws Exception {
+    	http
+        	.logout().disable() // ⛔ disables Spring Security's default /logout
+	        .csrf().disable()
+    	    .authorizeRequests()
+        	.anyRequest().permitAll();
+	}
 }
