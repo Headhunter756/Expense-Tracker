@@ -37,6 +37,7 @@ public class Config {
 	@Bean
 	public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
 		return http
+				.logout().disable()
 				.cors(customizer -> customizer.configurationSource(corsConfigurationSource()))
 				.csrf(customizer -> customizer.disable())
 				.httpBasic(Customizer.withDefaults())
@@ -77,13 +78,5 @@ public class Config {
 	    UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
 	    source.registerCorsConfiguration("/**", configuration);
 	    return source;
-	}
-	@Override
-	protected void configure(HttpSecurity http) throws Exception {
-    	http
-        	.logout().disable() // ⛔ disables Spring Security's default /logout
-	        .csrf().disable()
-    	    .authorizeRequests()
-        	.anyRequest().permitAll();
 	}
 }
