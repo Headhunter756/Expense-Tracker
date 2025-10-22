@@ -71,7 +71,7 @@ public class Config {
 	@Bean
 	public CorsConfigurationSource corsConfigurationSource() {
 	    CorsConfiguration configuration = new CorsConfiguration();
-	    configuration.setAllowedOrigins(List.of("https://headhunter756.github.io/Expense-Tracker")); // Add your frontend origin
+	    configuration.setAllowedOrigins(List.of("https://headhunter756.github.io")); // Add your frontend origin
 	    configuration.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
 	    configuration.setAllowedHeaders(List.of("Authorization", "Content-Type"));
 	    configuration.setAllowCredentials(true);
