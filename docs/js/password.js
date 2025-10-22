@@ -57,7 +57,7 @@ function confirm(){
 async function change() {
     const password = document.getElementById("confirmpass").value;
     const username = sessionStorage.getItem("username");
-    const response = await fetch("http://localhost:8080/profile/change",{
+    const response = await fetch("http://techhunters-expense-tracker.up.railway.app/profile/change",{
         method:'POST',
         headers:{
             'Content-Type':'application/json',
