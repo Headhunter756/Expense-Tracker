@@ -9,7 +9,7 @@ function handleLogin() {
   }
 
   // Example: Send login data to backend
-  fetch("http://techhunters-expense-tracker.up.railway.app/auth/login", {
+  fetch("https://techhunters-expense-tracker.up.railway.app/auth/login", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

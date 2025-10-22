@@ -19,7 +19,7 @@ window.addEventListener("DOMContentLoaded",()=>{
 });
 
 async function getDetails(username) {
-    const response = await fetch("http://techhunters-expense-tracker.up.railway.app/profile/details",{
+    const response = await fetch("https://techhunters-expense-tracker.up.railway.app/profile/details",{
         method: 'POST',
         headers:{
             'Authorization': sessionStorage.getItem("token"),
@@ -40,7 +40,7 @@ async function getDetails(username) {
 }
 
 async function getImage(username) {
-    const response = await fetch('http://techhunters-expense-tracker.up.railway.app/profile/image', {
+    const response = await fetch('https://techhunters-expense-tracker.up.railway.app/profile/image', {
     method:'POST',
     headers: {
       'Authorization': sessionStorage.getItem("token")

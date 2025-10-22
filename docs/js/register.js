@@ -47,7 +47,7 @@ function handleRegister() {
   );
   formdate.append("image", image);
 
-  fetch("http://techhunters-expense-tracker.up.railway.app/auth/register", {
+  fetch("https://techhunters-expense-tracker.up.railway.app/auth/register", {
     method: "POST",
     body: formdate,
   })

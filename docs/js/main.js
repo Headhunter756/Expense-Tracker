@@ -7,7 +7,7 @@ window.addEventListener("DOMContentLoaded",()=>{
 })
 
 async function logout() {
-    const response = await fetch("http://techhunters-expense-tracker.up.railway.app/auth/logout", {
+    const response = await fetch("https://techhunters-expense-tracker.up.railway.app/auth/logout", {
     method: "POST",
     headers: {
         'Content-Type':"application/json",
@@ -31,7 +31,7 @@ async function logout() {
 
 async function expenses() {
     document.getElementById("content").innerHTML = "";
-    const response = await fetch("http://techhunters-expense-tracker.up.railway.app/expense/",{
+    const response = await fetch("https://techhunters-expense-tracker.up.railway.app/expense/",{
         method: "GET",
         headers: {
             'Content-Type':"application/json",
@@ -126,7 +126,7 @@ function openedit(id) {
 }
 
 async function insertdata(id) {
-    const response = await fetch(`http://techhunters-expense-tracker.up.railway.app/expense/${id}`,{
+    const response = await fetch(`https://techhunters-expense-tracker.up.railway.app/expense/${id}`,{
         method: 'GET',
         headers:{
             'Content-Type':"application/json",
@@ -151,7 +151,7 @@ async function edit() {
     const formobj = document.getElementById("editform");
     const formdata = new FormData(formobj);
     const data = Object.fromEntries(formdata);
-    const response = await fetch(`http://techhunters-expense-tracker.up.railway.app/expense/`,{
+    const response = await fetch(`https://techhunters-expense-tracker.up.railway.app/expense/`,{
         method:'PUT',
         headers:{
             'Content-Type':"application/json",
@@ -170,7 +170,7 @@ async function edit() {
 }
 
 async function remove(id) {
-    const response = await fetch(`http://techhunters-expense-tracker.up.railway.app/expense/${id}`,{
+    const response = await fetch(`https://techhunters-expense-tracker.up.railway.app/expense/${id}`,{
         method:"DELETE",
         headers:{
             'Content-Type': "application/json",

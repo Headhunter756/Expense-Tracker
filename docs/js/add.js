@@ -3,7 +3,7 @@ window.addEventListener("DOMContentLoaded",()=>{
 });
 
 async function getLastId() {
-    const response = await fetch("http://techhunters-expense-tracker.up.railway.app/expense/id",{
+    const response = await fetch("https://techhunters-expense-tracker.up.railway.app/expense/id",{
         method: "GET",
         headers:{
             'Content-Type':"application/json",
@@ -18,7 +18,7 @@ async function add() {
     const formobj = document.getElementById("add");
     const formdata = new FormData(formobj);
     const data = Object.fromEntries(formdata);
-    const response = await fetch("http://techhunters-expense-tracker.up.railway.app/expense/",{
+    const response = await fetch("https://techhunters-expense-tracker.up.railway.app/expense/",{
         method: "POST",
         headers:{
             'Content-Type':"application/json",
