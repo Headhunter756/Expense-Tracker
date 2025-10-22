@@ -46,7 +46,7 @@ public class Config {
 						.permitAll()
 						.requestMatchers("/profile/**")
 						.hasAuthority(Permissions.READ.name())
-						.requestMatchers(HttpMethod.GET,"/expense/")
+						.requestMatchers(HttpMethod.GET,"/expense/**")
 						.hasAuthority(Permissions.READ.name())
 						.requestMatchers("/expense/**")
 						.hasAnyAuthority(Permissions.DELETE.name(),Permissions.WRITE.name())
