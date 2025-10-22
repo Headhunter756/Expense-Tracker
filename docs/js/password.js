@@ -68,7 +68,7 @@ async function change() {
     if (response.ok) {
         const message = await response.text();
         localStorage.setItem("message",message);
-        window.location.href = "html/profile.html";
+        window.location.href = "/Expense-Tracker/html/profile.html";
     }
     else{
         const message = await response.text();

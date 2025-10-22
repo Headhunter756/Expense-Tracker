@@ -210,5 +210,5 @@ function success(message){
     message_box.style.color = "green";
 }
 function openProfile(){
-    window.location.href="html/profile.html";
+    window.location.href="/Expense-Tracker/html/profile.html";
 }
