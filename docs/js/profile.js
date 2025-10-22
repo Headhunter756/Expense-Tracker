@@ -57,5 +57,5 @@ async function getImage(username) {
 }
 
 function changePassword() {
-    window.location.href = "/html/password.html";
+    window.location.href = "html/password.html";
 }

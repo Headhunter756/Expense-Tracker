@@ -187,7 +187,7 @@ async function remove(id) {
 }
 
 function openadd(){
-    window.location.href = "/html/add.html";
+    window.location.href = "html/add.html";
 }
 
 function formatdate(olddate) {
@@ -210,5 +210,5 @@ function success(message){
     message_box.style.color = "green";
 }
 function openProfile(){
-    window.location.href="/html/profile.html";
+    window.location.href="html/profile.html";
 }
