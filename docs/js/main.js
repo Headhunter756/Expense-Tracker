@@ -187,7 +187,7 @@ async function remove(id) {
 }
 
 function openadd(){
-    window.location.href = "html/add.html";
+    window.location.href = "/Expense-Tracker/html/add.html";
 }
 
 function formatdate(olddate) {
