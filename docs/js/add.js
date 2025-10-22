@@ -10,8 +10,10 @@ async function getLastId() {
             'Authorization':sessionStorage.getItem("token")
         },
     });
-    const lastid = await response.json();
-    document.getElementById("lastid").value = lastid.lastid;
+    if(response.ok){
+        const lastid = await response.json();
+        document.getElementById("lastid").value = lastid.lastid;
+    }
 }
 
 async function add() {
